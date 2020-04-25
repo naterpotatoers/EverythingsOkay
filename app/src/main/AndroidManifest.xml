@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".GoodMemoriesActivity"></activity>
+        <activity android:name=".AllGoodThingsActivity"></activity>
+        <activity android:name=".GoodThingActivity" />
+        <activity android:name=".SmellActivity" />
+        <activity android:name=".HearActivity" />
+        <activity android:name=".FeelActivity" />
+        <activity android:name=".GoodMemoriesActivity" />
         <activity android:name=".NewEntryActivity" />
         <activity android:name=".BreathingInActivity" />
         <activity android:name=".GroundingExerciseActivity" />
