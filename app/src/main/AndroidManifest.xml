@@ -9,16 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-<<<<<<< HEAD
-        <activity android:name=".BreatheOutActivity"></activity>
+        <activity android:name=".BreatheOutActivity"/>
         <activity android:name=".BreathHoldActivity" />
-=======
-        <activity android:name=".AllGoodThingsActivity"></activity>
+        <activity android:name=".AllGoodThingsActivity"/>
         <activity android:name=".GoodThingActivity" />
         <activity android:name=".SmellActivity" />
         <activity android:name=".HearActivity" />
         <activity android:name=".FeelActivity" />
->>>>>>> b095feaf74c2c4fe0e3f4757df5eef60bc3e9d59
         <activity android:name=".GoodMemoriesActivity" />
         <activity android:name=".NewEntryActivity" />
         <activity android:name=".BreathingInActivity" />
