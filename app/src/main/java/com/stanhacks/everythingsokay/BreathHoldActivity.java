@@ -8,13 +8,11 @@ import android.os.CountDownTimer;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.Timer;
 import java.util.TimerTask;
 
-
-public class BreathingInActivity extends AppCompatActivity {
+public class BreathHoldActivity extends AppCompatActivity {
     Button b1;
     TextView t1;
     CountDownTimer countDownTimer;
@@ -23,14 +21,14 @@ public class BreathingInActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_breathing_in);
+        setContentView(R.layout.activity_breath_hold);
         TextView mainTitle = (TextView) findViewById(R.id.BreatheInTitle);
         mainTitle.setText("Breathe In");
 
         b1 = findViewById(R.id.buttonBegin);
         t1 = findViewById(R.id.timer);
 
-        countDownTimer = new CountDownTimer(5000, 1000) {
+        countDownTimer = new CountDownTimer(7000, 1000) {
             @Override
             public void onTick(long millisUntilFinished) {
 
@@ -52,27 +50,19 @@ public class BreathingInActivity extends AppCompatActivity {
 
 
             }
-            
+
         });
         timer = new Timer();
         timer.schedule(new TimerTask() {
             @Override
             public void run() {
-                Intent intent = new Intent(BreathingInActivity.this, BreathHoldActivity.class);
+              Intent intent = new Intent(BreathHoldActivity.this, BreatheOutActivity.class);
                 startActivity(intent);
                 finish();
 
             }
-        }, 6000);
+        }, 8000);
 
-    }
-
-    private void goToBreathHoldActivity() {
-    }
-
-    public void goToBreathHoldActivity(View view) {
-        Intent goToActivity = new Intent(BreathingInActivity.this, BreathHoldActivity.class);
-        startActivity(goToActivity);
     }
 }
 
