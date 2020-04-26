@@ -15,7 +15,7 @@ public class GroundingExerciseActivity extends AppCompatActivity {
     }
 
     public void goToFeelActivity(View view){
-        Intent goToActivity = new Intent(GroundingExerciseActivity.this,FeelActivity.class);
+        Intent goToActivity = new Intent(GroundingExerciseActivity.this, FeelActivity.class);
         startActivity(goToActivity);
     }
 }

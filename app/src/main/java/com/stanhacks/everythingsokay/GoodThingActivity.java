@@ -5,9 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-
-import com.google.android.material.textfield.TextInputEditText;
-import com.google.android.material.textfield.TextInputLayout;
+import android.widget.EditText;
 
 public class GoodThingActivity extends AppCompatActivity {
 
@@ -20,7 +18,7 @@ public class GoodThingActivity extends AppCompatActivity {
 
     public void goToAllGoodThingActivity(View view){
         Intent goToActivity = new Intent(GoodThingActivity.this,AllGoodThingsActivity.class);
-        final TextInputEditText text = (TextInputEditText) findViewById(R.id.textInputEditText15);
+        EditText text = (EditText) findViewById(R.id.editTextAboutSelf);
         goToActivity.putExtra("Input", text.getText().toString());
         startActivity(goToActivity);
     }

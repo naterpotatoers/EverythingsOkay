@@ -15,13 +15,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         TextView mainTitle = (TextView) findViewById(R.id.textViewAppTitle);
-        mainTitle.setText("Everythings Okay");
+        mainTitle.setText("EverythingsOkay");
     }
     public void goToThoughtJournalActivity(View view) {
         Intent goToActivity = new Intent(MainActivity.this,ThoughtJournalActivity.class);
         startActivity(goToActivity);
-
-
     }
 
     public void goToGroundingExerciseActivity(View view){

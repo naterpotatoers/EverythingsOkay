@@ -11,13 +11,11 @@ public class AllGoodThingsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        String name;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_all_good_things);
-        Intent i = getIntent();
-        name = i.getStringExtra("Input");
-        final TextView text = (TextView) findViewById(R.id.textInput);
-        text.setVisibility(View.VISIBLE);
+        Intent extraIntentInfo = getIntent();
+        String name = extraIntentInfo.getStringExtra("Input");
+        TextView text = (TextView) findViewById(R.id.textInput);
         text.setText(name);
     }
 
