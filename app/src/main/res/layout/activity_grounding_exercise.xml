@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#94C5B5"
+    android:background="@drawable/backgroundtitlepage"
     tools:context=".GroundingExerciseActivity">
 
 
@@ -13,6 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Describe 5 things you see in the room."
+        android:textColor="#020202"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,7 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="84dp"
-        android:background="#EADB4F"
+        android:background="#FAF9F6"
         android:onClick="goToFeelActivity"
         android:text="Next"
         app:layout_constraintBottom_toBottomOf="parent"

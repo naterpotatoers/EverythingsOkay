@@ -14,9 +14,9 @@ public class AllGoodThingsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_all_good_things);
         Intent extraIntentInfo = getIntent();
-        String name = extraIntentInfo.getStringExtra("input");
+        String passInput = extraIntentInfo.getStringExtra("input");
         TextView text = (TextView) findViewById(R.id.textInput);
-        text.setText(name);
+        text.setText(passInput);
     }
 
     public void goToMainActivity(View view){

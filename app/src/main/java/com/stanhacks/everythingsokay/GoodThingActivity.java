@@ -19,7 +19,7 @@ public class GoodThingActivity extends AppCompatActivity {
     public void goToAllGoodThingActivity(View view){
         Intent goToActivity = new Intent(GoodThingActivity.this,AllGoodThingsActivity.class);
         EditText text = (EditText) findViewById(R.id.editTextAboutSelf);
-        goToActivity.putExtra("Input", text.getText().toString());
+        goToActivity.putExtra("input", text.getText().toString());
         startActivity(goToActivity);
     }
 }

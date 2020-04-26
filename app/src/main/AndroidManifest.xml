@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".BreatheOutActivity"/>
-        <activity android:name=".BreathHoldActivity" />
+        <activity android:name=".BreatheHoldActivity" />
         <activity android:name=".AllGoodThingsActivity"/>
         <activity android:name=".GoodThingActivity" />
         <activity android:name=".SmellActivity" />

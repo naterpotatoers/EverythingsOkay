@@ -42,6 +42,8 @@ public class BreathingInActivity extends AppCompatActivity {
             @Override
             public void onFinish() {
                 t1.setText("0");
+                Intent intent = new Intent(BreathingInActivity.this, BreatheHoldActivity.class);
+                startActivity(intent);
                 //Toast.makeText(BreathingInActivity.this, "Next", Toast.LENGTH_SHORT).show();
             }
         };
@@ -56,18 +58,24 @@ public class BreathingInActivity extends AppCompatActivity {
             }
 
         });
-        timer = new Timer();
-        timer.schedule(new TimerTask() {
-            @Override
-            public void run() {
-                Intent intent = new Intent(BreathingInActivity.this, BreatheHoldActivity.class);
-                startActivity(intent);
-                finish();
+       // timer = new Timer();
+        //timer.schedule(new TimerTask() {
+            //@Override
+            //public void run() {
+          //      Intent intent = new Intent(BreathingInActivity.this, BreatheHoldActivity.class);
+              //  startActivity(intent);
+                //finish();
 
-            }
-        }, 6000);
+           // }
+        //}, 6000);
 
     }
+
+    public void goToMainActivity(View view) {
+        Intent goToActivity = new Intent(BreathingInActivity.this, MainActivity.class);
+        startActivity(goToActivity);
+    }
+
 }
 
 

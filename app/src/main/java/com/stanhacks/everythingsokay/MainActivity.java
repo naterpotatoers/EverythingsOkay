@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         TextView mainTitle = (TextView) findViewById(R.id.textViewAppTitle);
-        mainTitle.setText("EverythingsOkay");
+        mainTitle.setText("Everythings Okay");
     }
     public void goToThoughtJournalActivity(View view) {
         Intent goToActivity = new Intent(MainActivity.this,ThoughtJournalActivity.class);

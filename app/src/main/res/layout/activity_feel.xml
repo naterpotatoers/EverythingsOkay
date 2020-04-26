@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#94C5B5"
+    android:background="@drawable/backgroundtitlepage"
     tools:context=".FeelActivity">
 
     <TextView
@@ -18,6 +18,7 @@
         android:layout_marginRight="84dp"
         android:layout_marginBottom="585dp"
         android:text="Name 4 things you can feel."
+        android:textColor="#050505"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,7 +35,7 @@
         android:layout_marginEnd="162dp"
         android:layout_marginRight="162dp"
         android:layout_marginBottom="176dp"
-        android:background="#EADB4F"
+        android:background="#FAFAFA"
         android:onClick="goToHearActivity"
         android:text="Next"
         app:layout_constraintBottom_toBottomOf="parent"

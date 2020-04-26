@@ -37,18 +37,20 @@ public class BreatheOutActivity extends AppCompatActivity {
             @Override
             public void onFinish() {
                 t1.setText("0");
+                Intent intent = new Intent(BreatheOutActivity.this, BreathingInActivity.class);
+                startActivity(intent);
 
             }
         }.start();
-        timer = new Timer();
-        timer.schedule(new TimerTask() {
-            @Override
-            public void run() {
-                Intent intent = new Intent(BreatheOutActivity.this, BreathingInActivity.class);
-                startActivity(intent);
-                finish();
+     //   timer = new Timer();
+      //  timer.schedule(new TimerTask() {
+        //    @Override
+          //  public void run() {
+            //    Intent intent = new Intent(BreatheOutActivity.this, BreathingInActivity.class);
+              //  startActivity(intent);
+                //finish();
 
-            }
-        }, 6000);
+//            }
+  //      }, 5000);
     }
 }
