@@ -38,7 +38,6 @@ public class BreatheHoldActivity extends AppCompatActivity {
             @Override
             public void onFinish() {
                 t1.setText("0");
-
             }
         }.start();
         timer = new Timer();

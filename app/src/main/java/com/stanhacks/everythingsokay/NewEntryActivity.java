@@ -16,10 +16,10 @@ public class NewEntryActivity extends AppCompatActivity {
     }
 
     public void goToGoodMemoriesActivity(View view){
-//        EditText editTextMemory = (EditText) findViewById(R.id.editTextMemoryInput);
-//        String memorySaved = editTextMemory.getText().toString();
+        EditText editTextMemory = (EditText) findViewById(R.id.editTextMemoryInput);
+        String memorySaved = editTextMemory.getText().toString();
         Intent goToActivity = new Intent(NewEntryActivity.this, GoodMemoriesActivity.class);
-//        goToActivity.putExtra("input", memorySaved;
+        goToActivity.putExtra("input", memorySaved);
         startActivity(goToActivity);
     }
 }

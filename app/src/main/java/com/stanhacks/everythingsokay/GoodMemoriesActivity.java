@@ -17,15 +17,15 @@ public class GoodMemoriesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_good_memories);
 
-//        Intent extraIntentInfo = getIntent();
-//        String name = extraIntentInfo.getStringExtra("Input");
+        Intent extraIntentInfo = getIntent();
+        String name = extraIntentInfo.getStringExtra("input");
 
         ListView list = (ListView) findViewById(R.id.listViewMemories);
         final ArrayList<String> memories = new ArrayList<>();
         memories.add("Went for a walk today");
         memories.add("Pet my cat without getting scratched");
         memories.add("Aced my midterm!");
-//        memories.add(name);
+        memories.add(name);
 
         ArrayAdapter adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, memories);
         list.setAdapter(adapter);
