@@ -2,6 +2,7 @@ package com.stanhacks.everythingsokay;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -20,6 +21,7 @@ public class BreathingInActivity extends AppCompatActivity {
     CountDownTimer countDownTimer;
     Timer timer;
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,13 +54,13 @@ public class BreathingInActivity extends AppCompatActivity {
 
 
             }
-            
+
         });
         timer = new Timer();
         timer.schedule(new TimerTask() {
             @Override
             public void run() {
-                Intent intent = new Intent(BreathingInActivity.this, BreathHoldActivity.class);
+                Intent intent = new Intent(BreathingInActivity.this, BreatheHoldActivity.class);
                 startActivity(intent);
                 finish();
 
@@ -66,13 +68,7 @@ public class BreathingInActivity extends AppCompatActivity {
         }, 6000);
 
     }
-
-    private void goToBreathHoldActivity() {
-    }
-
-    public void goToBreathHoldActivity(View view) {
-        Intent goToActivity = new Intent(BreathingInActivity.this, BreathHoldActivity.class);
-        startActivity(goToActivity);
-    }
 }
+
+
 
